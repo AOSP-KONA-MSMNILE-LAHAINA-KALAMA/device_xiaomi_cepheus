@@ -118,6 +118,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     prebuilts/vndk/v29/arm64/arch-arm64-armv8-a/shared/vndk-sp/libc++.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libc++.so
 
+# Charge control
+PRODUCT_PACKAGES += \
+    vendor.lineage.chgctrl@1.0-service.cepheus
+
 # Device-specific settings
 PRODUCT_PACKAGES += \
     XiaomiParts
